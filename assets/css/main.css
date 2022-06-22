@@ -192,6 +192,18 @@ input, select, textarea {
 		letter-spacing: -0.035em;
 	}
 
+	.pink{
+
+	}
+
+	#welcome-section {
+		/* padding: 4em;
+		border: 13px solid;
+		border-radius: 90px;
+		box-shadow: 4px 4px 14px #60d467b5;
+		margin-bottom: 4em; */
+	}
+
 	#intro-adjective{
 		/* color: #c483ff; */
 		transition: opacity 0.3s ease; 
@@ -212,6 +224,21 @@ input, select, textarea {
 
 	#interact-ctn button {
 		margin-right: 1em;
+	}
+
+	section + h2{
+		margin-top: 4.5em;
+	}
+
+	#menu .icons li {
+		border-top:0 !important;
+	}
+
+	.menu-icons li{
+		border-top: none !important;
+	}
+	.menu-icons li a {
+	text-align: start !important;
 	}
 
 		h1 a {
@@ -238,7 +265,7 @@ input, select, textarea {
 	h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
 	}
@@ -2727,6 +2754,7 @@ input, select, textarea {
 
 				.tiles article > a h2 {
 					margin: 0;
+					text-shadow: 1px 1px 0px black;
 				}
 
 				.tiles article > a .content {
@@ -2746,11 +2774,15 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				/* background-color: #f2849e; */
+				background-image: url('/images/housing-app-ss.png');
+				
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				/* background-color: #7ecaf6; */
+				background-image: url('/images/portfolio-ss.jpg');
+				background-size: cover
 			}
 
 			.tiles article.style3 > .image:before {
@@ -2914,21 +2946,35 @@ input, select, textarea {
 			width: 0;
 			border-top: 14.43px solid #585858;
 		  }
+		  .hover-hex {
+			display: none;
+			position: absolute;
+			background-repeat: no-repeat;
+			background-size: contain;
+		  }
 
+		  .hover-hex img{
+			width:50px;
+			object-fit: cover;
+			border-radius: 50%;
+			position: absolute;
+		  }
+
+		
 		  .hexagon span{
 			position: absolute;
 		  }
 
 		  #h-one{
 			left: 20px;
-			top:-3px
+			/* top:-3px */
 		  }
 		  #h-two{
 			right: -2px;
 		
 		  }
 
-		  .h-color{
+		  .pink{
 			color:#f2849e !important;
 		  }
 

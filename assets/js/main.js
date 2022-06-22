@@ -115,7 +115,14 @@
 	
 	// About pop-up
 
-	
+	$('#about-txt').on('mouseover', function(){
+		$('.hover-hex').css('display', 'block')
+		console.log('works')
+	})
+	$('#about-txt').on('mouseleave', function(){
+		$('.hover-hex').css('display', 'none')
+		console.log('works')
+	})
 
 
 	
